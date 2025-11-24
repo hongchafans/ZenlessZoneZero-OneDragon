@@ -68,7 +68,7 @@ class TransportByCompendium(ZOperation):
 
 def __debug():
     ctx = ZContext()
-    ctx.init_by_config()
+    ctx.init()
     ctx.init_ocr()
     ctx.run_context.start_running()
     op = TransportByCompendium(ctx, '训练', '定期清剿', '疯子与追随者')
